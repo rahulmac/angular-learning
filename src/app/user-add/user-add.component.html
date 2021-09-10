@@ -1,0 +1,8 @@
+<div class="col-md-3"><div class="form-group p-3">
+    <input type="text" name="username" class="form-control" value="{{usernameedit}}" id="id_{{editIndex}}" placeholder="Enter Username" [(ngModel)]="username"/>
+</div>
+<div class="form-group p-3">
+    <button *ngIf="!isEdit" nane="button" [disabled]="username==''" class="btn btn-primary form-control" (click)="saveUser()">Add User</button>
+    <button *ngIf="isEdit" nane="button"  class="btn btn-primary form-control" (click)="updateUser()">Update User</button>
+</div>
+</div>
